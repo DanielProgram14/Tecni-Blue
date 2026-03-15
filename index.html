@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ==========================================================================
+       Metadatos y enlaces del documento
+       ========================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecni Blue | Soporte y Desarrollo Web</title>
+
+    <!-- Descripcin para SEO -->
+    <meta name="description" content="Soporte técnico, ciberseguridad y desarrollo web profesional en Antofagasta. Respuestas claras, soluciones rápidas y acompañamiento real.">
+
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==========================================================================
+       Cabecera del sitio
+       ========================================================================== -->
+    <header class="site-header">
+        <!-- Logo y nombre de la marca -->
+        <a href="#inicio" class="logo-link">
+            <img src="img/logo2.png" alt="Logo de Tecni Blue, Soporte Técnico y Desarrollo Web Antofagasta" class="header-logo">
+            <span class="brand-name">Tecni Blue</span>
+        </a>
+
+        <!-- Navegacin principal para escritorio -->
+        <nav class="nav-desktop">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#web">Desarrollo Web</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <!-- Botn de llamada a la accin en la cabecera -->
+        <div class="header-cta">
+            <a href="#contacto" class="btn btn-outline btn-small">Agendar diagnóstico</a>
+        </div>
+
+        <!-- Botn de men para dispositivos mveles (hamburguesa) -->
+        <button class="nav-toggle" aria-label="Abrir menú" aria-controls="nav-mobile" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- ==========================================================================
+       Navegacin para dispositivos mveles
+       ========================================================================== -->
+    <div id="nav-mobile" class="nav-mobile" aria-hidden="true">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#web">Desarrollo Web</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+    <!-- ==========================================================================
+       Contenido principal de la pgina
+       ========================================================================== -->
+    <main>
+        <!-- ==========================================================================
+           Seccin "Hero" o de bienvenida
+           ========================================================================== -->
+        <section class="hero" id="inicio">
+            <div class="hero-content fade-in">
+                <p class="eyebrow">Soporte técnico + desarrollo web en Antofagasta</p>
+                <h1>Tu tecnología en manos expertas, sin vueltas.</h1>
+                <p class="hero-lead">Soluciones claras para empresas y personas: soporte avanzado, seguridad digital y sitios web que convierten. Trabajamos con diagnóstico honesto y tiempos reales.</p>
+
+                <!-- Botones de llamada a la accin principales -->
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Agendar soporte</a>
+                    <a href="https://wa.me/56936326213" class="btn btn-outline" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i> Cotizar por WhatsApp</a>
+                </div>
+
+                <!-- Lista de puntos de confianza -->
+                <div class="hero-trust">
+                    <div class="trust-item"><i class="fas fa-circle-check"></i> Atención cercana y profesional</div>
+                    <div class="trust-item"><i class="fas fa-shield-halved"></i> Seguridad con enfoque preventivo</div>
+                    <div class="trust-item"><i class="fas fa-laptop-code"></i> Webs rápidas y administrables</div>
+                </div>
+            </div>
+
+            <!-- Elemento visual de la seccin Hero -->
+            <div class="hero-visual fade-in">
+                <div class="device-card">
+                    <div class="device-header">
+                        <span>Checklist rápido</span>
+                        <span class="pill">Antofagasta</span>
+                    </div>
+                    <ul class="device-list">
+                        <li><i class="fas fa-bolt"></i> Diagnóstico y plan de acción</li>
+                        <li><i class="fas fa-screwdriver-wrench"></i> Reparación y optimización</li>
+                        <li><i class="fas fa-lock"></i> Endurecimiento de seguridad</li>
+                        <li><i class="fas fa-rocket"></i> Entrega con validación final</li>
+                    </ul>
+                    <div class="device-footer">
+                        <span>Soporte remoto y presencial</span>
+                        <span class="status-dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           Seccin de Servicios
+           ========================================================================== -->
+        <section class="servicios" id="servicios">
+            <div class="section-title fade-in">
+                <span class="badge">Garantía profesional</span>
+                <h2>Servicios destacados</h2>
+                <p>Trabajo serio, comunicación clara y resultados medibles para mantener tu operación activa.</p>
+            </div>
+
+            <!-- Contenedor de tarjetas de servicios -->
+            <div class="cards">
+                <div class="card fade-in">
+                    <i class="fas fa-laptop-medical"></i>
+                    <h3>Soporte técnico</h3>
+                    <p>Optimización de sistemas, reparación avanzada y mantenimiento preventivo para equipos.</p>
+                </div>
+
+                <div class="card fade-in">
+                    <i class="fas fa-shield-halved"></i>
+                    <div class="badge badge-inline">Especialidad</div>
+                    <h3>Ciberseguridad</h3>
+                    <p>Protección de datos, recuperación forense y planes para reducir riesgos de forma continua.</p>
+                </div>
+
+                <div class="card fade-in" id="web">
+                    <i class="fas fa-code"></i>
+                    <h3>Desarrollo web</h3>
+                    <p>Landing pages, sitios institucionales y catálogos listos para vender y escalar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           Seccin de Desarrollo Web
+           ========================================================================== -->
+        <section class="web-section">
+            <div class="web-grid">
+                <div class="web-copy fade-in">
+                    <span class="badge">Web que convierte</span>
+                    <h2>Diseño sólido, velocidad real y contenido estratégico.</h2>
+                    <p>Planificamos cada sitio con objetivos comerciales claros: capturar leads, presentar tu propuesta de valor y facilitar el contacto. Todo optimizado para móviles y con SEO base.</p>
+                    <div class="web-actions">
+                        <a href="#contacto" class="btn btn-primary">Ver propuesta</a>
+                        <a href="https://wa.me/56936326213" class="btn btn-outline" target="_blank" rel="noreferrer">Hablar con un experto</a>
+                    </div>
+                </div>
+                <div class="web-features fade-in">
+                    <!-- Caractersticas especficas del desarrollo web -->
+                    <div class="feature-card">
+                        <h4>Identidad consistente</h4>
+                        <p>Lineamientos visuales y copywriting alineados a tu marca.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Performance primero</h4>
+                        <p>Arquitectura ligera, carga rápida y navegación clara.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Gestión simple</h4>
+                        <p>Ediciones rápidas, integración con WhatsApp y analytics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           Seccin de Proceso de Trabajo
+           ========================================================================== -->
+        <section class="process" id="proceso">
+            <div class="section-title fade-in">
+                <span class="badge">Trabajo transparente</span>
+                <h2>Nuestro proceso</h2>
+                <p>Una ruta clara para que sepas qué hacemos y cuándo.</p>
+            </div>
+
+            <div class="process-grid">
+                <!-- Pasos del proceso -->
+                <div class="process-step fade-in">
+                    <span class="step-number">1</span>
+                    <h3>Diagnóstico</h3>
+                    <p>Escuchamos tu necesidad, analizamos el contexto y definimos prioridades.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <span class="step-number">2</span>
+                    <h3>Ejecución</h3>
+                    <p>Implementamos soluciones con reportes claros y avances visibles.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <span class="step-number">3</span>
+                    <h3>Entrega</h3>
+                    <p>Validamos resultados y dejamos un plan de continuidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           Seccin de Portafolio
+           ========================================================================== -->
+       <section class="portafolio" id="portafolio">
+    <div class="section-title fade-in">
+        <span class="badge">Proyectos Destacados</span>
+        <h2>Proyectos Destacados</h2>
+        <p>Soluciones tecnológicas implementadas con éxito para empresas y clientes particulares en Antofagasta.</p>
+    </div>
+
+    <div class="portfolio-grid">
+        <!-- Tarjeta de Proyecto 1 -->
+        <article class="project-card fade-in">
+            <div class="project-image">
+                <img src="img/serkan-spa.png" alt="Sistema de Gestión Serkan Spa">
+                <div class="project-overlay">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Sistema de Gestión Empresarial – Serkan Spa</h3>
+                <p>Desarrollo de una plataforma web integral diseñada para optimizar la gestión interna de la empresa. El sistema permite administrar trabajadores, clientes, inventario, tareas operativas, eventos y documentación corporativa desde un entorno centralizado, mejorando la eficiencia y el control de la información.</p>
+                <a href="serkan-spa.html" class="btn-text">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <!-- Tarjeta de Proyecto 2 -->
+        <article class="project-card fade-in">
+            <div class="project-image">
+                <img src="img/Adut1.jpg" alt="Auditoría de Seguridad Forense">
+                <div class="project-overlay">
+                    <span class="tech-tag">Ciberseguridad</span>
+                    <span class="tech-tag">Forensics</span>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Auditoría de Seguridad y Recuperación de Datos</h3>
+                <p>Intervención especializada tras un incidente de seguridad informática. Se realizó análisis forense del sistema afectado, recuperación de información crítica y aplicación de medidas de endurecimiento para fortalecer la seguridad de los equipos y prevenir futuras vulnerabilidades.</p>
+                <a href="audit-case.html" class="btn-text">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <!-- Tarjeta de Proyecto 3 -->
+        <article class="project-card fade-in">
+            <div class="project-image">
+                <img src="img/network-case.jpg" alt="Reparación de Storage">
+                <div class="project-overlay">
+                    <span class="tech-tag">Mantenimiento</span>
+                    <span class="tech-tag">Soporte</span>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Mantención Preventiva y Optimización de Equipos</h3>
+                <p>Servicio profesional de mantención preventiva orientado a mejorar el rendimiento, estabilidad y vida útil de los equipos. Incluye limpieza interna, optimización de hardware, actualización de software, eliminación de amenazas y configuración para un funcionamiento seguro y eficiente.</p>
+                <a href="preventive-maintenance.html" class="btn-text">Ver detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+        <!-- ==========================================================================
+           Seccin de Contacto
+           ========================================================================== -->
+        <section class="contacto" id="contacto">
+            <div class="contact-card fade-in">
+                <div class="contact-copy">
+                    <h2>¿Hablamos de tu proyecto?</h2>
+                    <p>Estamos en Antofagasta listos para ayudarte con soporte, seguridad y desarrollo web.</p>
+                    <div class="contact-actions">
+                        <a href="https://wa.me/56936326213" class="btn btn-primary" target="_blank" rel="noreferrer">
+                            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                        </a>
+                        <a href="mailto:tecni.blue.servicios@gmail.com" class="btn btn-outline">Escribir un correo</a>
+                    </div>
+                </div>
+                <div class="contact-grid">
+                    <!-- Detalles de contacto -->
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <p class="contact-label">Ubicación</p>
+                            <p>Antofagasta, Chile</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <p class="contact-label">Instagram</p>
+                            <p>@tecni_blue</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="contact-label">Correo</p>
+                            <p>tecni.blue.servicios@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       Pie de pgina
+       ========================================================================== -->
+    <footer>
+        <p>© 2026 Tecni Blue - Innovación Técnica y Seguridad Digital</p>
+    </footer>
+
+    <!-- ==========================================================================
+       Botn flotante de WhatsApp
+       ========================================================================== -->
+    <a class="whatsapp-float" href="https://wa.me/56936326213" target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ==========================================================================
+       Scripts JavaScript
+       ========================================================================== -->
+    <script src="script.js"></script>
+</body>
+</html>

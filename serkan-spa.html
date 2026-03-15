@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Proyecto | Sistema de Gestión Serkan Spa</title>
+
+    <meta name="description" content="Detalles sobre el desarrollo del sistema de gestión integral para Serkan Spa, una plataforma para administrar trabajadores, clientes, inventario y más.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail-header {
+            padding: 20;
+            text-align: center;
+        }
+        .project-detail-header h1  {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(2.4rem, 4vw, 3.6rem);
+            line-height: 1.1;
+            margin-bottom: 1rem;
+
+            
+        }
+
+        
+        .project-detail-header .tech-tags {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+            padding-top: 10px;
+        }
+        
+        .tech-tag {
+            background: rgba(54, 214, 255, 0.2);
+            color: var(--primary);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border: 1px solid rgba(54, 214, 255, 0.3);
+        }
+        .project-content {
+            padding: 0 8vw 6rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .project-readme {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+        .project-readme h2 {
+            font-family: "Space Grotesk", sans-serif;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        .project-readme p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            color: var(--muted);
+        }
+        .project-readme ul {
+            list-style: none;
+            padding-left: 10px;
+            margin-bottom: 1rem;
+        }
+        .project-readme li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 0.5rem;
+            color: var(--muted);
+        }
+        .project-readme li::before {
+            content: "\f00c"; /* Font Awesome check icon */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: var(--secondary);
+        }
+        .project-gallery {
+            margin-bottom: 3rem;
+        }
+        .project-gallery h2 {
+            font-family: "Space Grotesk", sans-serif;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 24px rgba(6, 21, 34, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-grid img:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 16px 40px rgba(6, 21, 34, 0.5);
+        }
+        .project-links {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header scrolled">
+        <a href="index.html" class="logo-link">
+            <img src="img/logo2.png" alt="Logo de Tecni Blue" class="header-logo">
+            <span class="brand-name">Tecni Blue</span>
+        </a>
+        <nav class="nav-desktop">
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="index.html#web">Desarrollo Web</a>
+            <a href="index.html#portafolio">Portafolio</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+        <a href="index.html#contacto" class="btn btn-outline btn-small">Contacto</a>
+    </header>
+
+    <main>
+        <section class="project-detail-header">
+            <h1>Sistema de Gestión Serkan Spa</h1>
+            <p class="hero-lead">Una plataforma web a medida para la gestión completa del negocio.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="project-readme fade-in">
+                <h2>Resumen del Proyecto</h2>
+                <p>
+                    Serkan Spa, una empresa en crecimiento, necesitaba una solución centralizada para superar los desafíos operativos de la gestión manual. Se desarrolló una aplicación web completa que integra todas las áreas del negocio, desde la administración de personal y clientes hasta el control de inventario y la programación de eventos.
+                </p>
+                <p>
+                    El objetivo principal fue crear una herramienta intuitiva y potente que optimizara los flujos de trabajo, redujera errores manuales y proporcionara una visión clara del estado del negocio en tiempo real.
+                </p>
+                <h2>Características Principales</h2>
+                <ul>
+                    <li><strong>Gestión de Personal:</strong> Administración de perfiles de trabajadores, roles, permisos y seguimiento de tareas.</li>
+                    <li><strong>Base de Datos de Clientes:</strong> Fichas de clientes con historial de servicios, preferencias y datos de contacto.</li>
+                    <li><strong>Control de Inventario:</strong> Seguimiento de stock de productos, alertas de bajo inventario y gestión de proveedores.</li>
+                    <li><strong>Agenda y Eventos:</strong> Calendario interactivo para programar citas, eventos especiales y asignar recursos.</li>
+                    <li><strong>Módulo de Documentación:</strong> Repositorio central para almacenar y compartir documentos importantes de la empresa de forma segura.</li>
+                </ul>
+            </div>
+
+            <div class="project-gallery fade-in">
+                <h2>Galería de Imágenes</h2>
+                <div class="gallery-grid">
+                    <img src="img/serkan-spa1.png" alt="Vista del Dashboard Principal del sistema Serkan Spa">
+                    <img src="img/serkan-spa2.png" alt="Módulo de gestión de inventario">
+                    <img src="img/serkan-spa3.png" alt="Calendario de eventos y tareas">
+                </div>
+            </div>
+
+            <div class="project-links fade-in">
+                <a href="https://github.com/usuario/serkan-spa-repo" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> Ver en GitHub
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Tecni Blue - Innovación Técnica y Seguridad Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

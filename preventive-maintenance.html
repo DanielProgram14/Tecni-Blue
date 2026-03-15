@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ==========================================================================
+       Metadatos y enlaces del documento
+       ========================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantencion Preventiva y Optimizacion de Equipos | Tecni Blue</title>
+
+    <!-- Descripcion para SEO -->
+    <meta name="description" content="Servicio profesional de mantencion preventiva orientado a mejorar el rendimiento, estabilidad y vida util de los equipos.">
+
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .project-detail-header {
+            padding: 6rem 8vw 4rem;
+            text-align: center;
+        }
+
+        .project-detail-header h1 {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(2.4rem, 4vw, 3.6rem);
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .project-detail-header .tech-tags {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tech-tag {
+            background: rgba(54, 214, 255, 0.2);
+            color: var(--primary);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border: 1px solid rgba(54, 214, 255, 0.3);
+        }
+
+        .project-content {
+            padding: 0 8vw 6rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .project-readme {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius-md);
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .project-readme h2 {
+            font-family: "Space Grotesk", sans-serif;
+            margin-bottom: 1.2rem;
+            color: var(--primary);
+        }
+
+        .project-readme p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            color: var(--muted);
+        }
+
+        .project-readme ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-readme li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 0.6rem;
+            color: var(--muted);
+        }
+
+        .project-readme li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: var(--secondary);
+        }
+
+        .project-gallery {
+            margin-bottom: 3rem;
+        }
+
+        .project-gallery h2 {
+            font-family: "Space Grotesk", sans-serif;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(6, 21, 34, 0.4);
+            box-shadow: 0 12px 30px rgba(2, 12, 20, 0.35);
+        }
+
+        .project-links {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- ==========================================================================
+       Cabecera del sitio
+       ========================================================================== -->
+    <header class="site-header scrolled">
+        <a href="index.html" class="logo-link">
+            <img src="img/logo2.png" alt="Logo de Tecni Blue" class="header-logo">
+            <span class="brand-name">Tecni Blue</span>
+        </a>
+        <nav class="nav-desktop">
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="index.html#web">Desarrollo Web</a>
+            <a href="index.html#portafolio">Portafolio</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+        <a href="index.html#contacto" class="btn btn-outline btn-small">Contacto</a>
+    </header>
+
+    <!-- ==========================================================================
+       Contenido principal de la pagina
+       ========================================================================== -->
+    <main>
+        <section class="project-detail-header">
+            <h1>Mantencion Preventiva y Optimizacion de Equipos</h1>
+            <p class="hero-lead">Servicio profesional para mantener tus equipos estables, seguros y con mejor rendimiento.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">Diagnostico</span>
+                <span class="tech-tag">Limpieza Interna</span>
+                <span class="tech-tag">Optimizacion</span>
+                <span class="tech-tag">Seguridad</span>
+                <span class="tech-tag">Backups</span>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="project-readme fade-in">
+                <h2>Resumen del Servicio</h2>
+                <p>
+                    Este servicio esta orientado a empresas y usuarios que necesitan reducir fallos, mejorar la velocidad de sus equipos
+                    y extender su vida util. Combinamos limpieza fisica, optimizacion del sistema y refuerzo de seguridad para dejar el
+                    entorno listo para operar con confianza.
+                </p>
+                <p>
+                    Cada mantencion se realiza con un checklist documentado, recomendaciones personalizadas y validacion final para
+                    asegurar que el rendimiento y la estabilidad queden en niveles optimos.
+                </p>
+                <h2>Alcance y Entregables</h2>
+                <ul>
+                    <li><strong>Diagnostico completo:</strong> revision de hardware, almacenamiento y estado del sistema operativo.</li>
+                    <li><strong>Limpieza interna:</strong> eliminacion de polvo, ajuste de ventilacion y verificacion de temperatura.</li>
+                    <li><strong>Optimizacion de software:</strong> ajustes de inicio, actualizaciones criticas y limpieza de residuos.</li>
+                    <li><strong>Seguridad y respaldo:</strong> escaneo de amenazas, configuracion de protecciones y copias de seguridad.</li>
+                    <li><strong>Informe final:</strong> resumen de hallazgos, mejoras aplicadas y recomendaciones futuras.</li>
+                </ul>
+            </div>
+
+            <div class="project-readme fade-in">
+                <h2>Plan de Trabajo</h2>
+                <p>Una ejecucion ordenada para minimizar tiempos fuera de servicio y asegurar resultados medibles.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step fade-in">
+                    <span class="step-number">1</span>
+                    <h3>Evaluacion Inicial</h3>
+                    <p>Levantamiento de sintomas, diagnostico de hardware y validacion de puntos criticos.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <span class="step-number">2</span>
+                    <h3>Intervencion Tecnica</h3>
+                    <p>Limpieza interna, ajustes de rendimiento, actualizaciones y eliminacion de amenazas.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <span class="step-number">3</span>
+                    <h3>Validacion y Reporte</h3>
+                    <p>Pruebas de estabilidad, recomendaciones preventivas y entrega de informe final.</p>
+                </div>
+            </div>
+
+            <div class="project-gallery fade-in">
+                <h2>Galeria del Proceso</h2>
+                <div class="gallery-grid">
+                    <img src="img/maintenance-diagnosis.svg" alt="Diagnostico y revision de equipos">
+                    <img src="img/maintenance-cleaning.svg" alt="Limpieza interna y ajuste de ventilacion">
+                    <img src="img/maintenance-optimization.svg" alt="Optimizacion de rendimiento y seguridad">
+                </div>
+            </div>
+
+            <div class="project-links fade-in">
+                <a href="index.html#contacto" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Agendar mantencion preventiva
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       Pie de pagina
+       ========================================================================== -->
+    <footer>
+        <p>© 2026 Tecni Blue - Innovacion Tecnica y Seguridad Digital</p>
+    </footer>
+
+    <!-- ==========================================================================
+       Scripts JavaScript
+       ========================================================================== -->
+    <script src="script.js"></script>
+</body>
+</html>

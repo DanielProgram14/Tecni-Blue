@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Equipo en diagnostico">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2233"/>
+      <stop offset="1" stop-color="#061522"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2e44"/>
+      <stop offset="1" stop-color="#0b2233"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <rect x="140" y="120" width="620" height="340" rx="28" fill="url(#screen)" stroke="#36d6ff" stroke-width="3"/>
+  <rect x="180" y="160" width="540" height="220" rx="18" fill="#061522"/>
+  <rect x="180" y="400" width="540" height="40" rx="20" fill="#0b2233" stroke="#1aa9d1" stroke-width="2"/>
+  <circle cx="310" cy="260" r="64" fill="none" stroke="#36d6ff" stroke-width="10"/>
+  <line x1="350" y1="300" x2="420" y2="370" stroke="#ff9f1c" stroke-width="12" stroke-linecap="round"/>
+  <rect x="510" y="210" width="150" height="20" rx="10" fill="#36d6ff"/>
+  <rect x="510" y="250" width="200" height="18" rx="9" fill="#1aa9d1"/>
+  <rect x="510" y="285" width="130" height="16" rx="8" fill="#ff9f1c"/>
+  <circle cx="450" cy="500" r="48" fill="#0f2e44" stroke="#36d6ff" stroke-width="3"/>
+  <circle cx="450" cy="500" r="18" fill="#36d6ff"/>
+</svg>

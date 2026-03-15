@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Optimizacion y seguridad">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2233"/>
+      <stop offset="1" stop-color="#061522"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg3)"/>
+  <path d="M450 140 C530 140 610 180 640 260 C670 340 640 430 560 480 C500 518 400 518 340 480 C260 430 230 340 260 260 C290 180 370 140 450 140 Z" fill="#0f2e44" stroke="#36d6ff" stroke-width="4"/>
+  <circle cx="450" cy="320" r="90" fill="#061522" stroke="#1aa9d1" stroke-width="3"/>
+  <line x1="450" y1="320" x2="520" y2="270" stroke="#ff9f1c" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="450" cy="320" r="10" fill="#36d6ff"/>
+  <rect x="210" y="220" width="110" height="180" rx="20" fill="#0f2e44" stroke="#36d6ff" stroke-width="3"/>
+  <rect x="590" y="220" width="110" height="180" rx="20" fill="#0f2e44" stroke="#36d6ff" stroke-width="3"/>
+  <path d="M450 230 L500 260 L500 330 C500 370 480 400 450 420 C420 400 400 370 400 330 L400 260 Z" fill="#1aa9d1" stroke="#36d6ff" stroke-width="3"/>
+  <path d="M440 315 L450 330 L470 300" fill="none" stroke="#ff9f1c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
