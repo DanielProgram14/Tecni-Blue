@@ -782,6 +782,14 @@ footer {
     .hero {
         padding-top: 4rem;
     }
+
+    .section-title{
+        padding:4rem 6vw 2.5rem;
+    }
+
+    .services-category{
+        padding:3rem 6vw;
+    }
 }
 
 /* Para móviles */
@@ -807,6 +815,47 @@ footer {
         right: 1.2rem;
         bottom: 1.2rem;
     }
+
+    .nav-mobile{
+        left:5vw;
+        right:5vw;
+        width:auto;
+    }
+
+    .section-title{
+        padding:3.2rem 5vw 2rem;
+        text-align:left;
+    }
+
+    .section-title p{
+        margin:0;
+    }
+
+    .services-category{
+        padding:2.5rem 5vw;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-card{
+        padding:1.4rem;
+        min-height:auto;
+    }
+
+    .service-card-header{
+        align-items:center;
+    }
+
+    .service-icon{
+        width:40px;
+        height:40px;
+    }
+
+    .service-tag{
+        font-size:0.7rem;
+    }
 }
 
 /* Accesibilidad: Reduce animaciones si el usuario lo prefiere */
@@ -816,4 +865,166 @@ footer {
         transition: none !important;
         scroll-behavior: auto !important;
     }
+}
+
+/* ================================
+   PAGINA DE SERVICIOS
+================================ */
+
+.section-title{
+    text-align:center;
+    padding:5rem 8vw 3rem;
+}
+
+.section-title h1{
+    font-family:"Space Grotesk",sans-serif;
+    font-size:clamp(2.4rem,4vw,3.2rem);
+    margin-bottom:1rem;
+}
+
+.section-title p{
+    max-width:650px;
+    margin:auto;
+    color:var(--muted);
+}
+
+
+/* ================================
+   CATEGORIA DE SERVICIOS
+================================ */
+
+.services-category{
+    padding:3.5rem 8vw;
+    border-top:1px solid rgba(255,255,255,0.05);
+}
+
+.services-category:first-of-type{
+    border-top:0;
+}
+
+.services-category h2{
+    font-family:"Space Grotesk",sans-serif;
+    margin-bottom:2rem;
+    font-size:1.8rem;
+    color:var(--primary);
+    display:flex;
+    align-items:center;
+    gap:0.75rem;
+}
+
+.services-category h2::before{
+    content:"";
+    width:10px;
+    height:10px;
+    border-radius:999px;
+    background:var(--secondary);
+    box-shadow:0 0 0 6px rgba(255,159,28,0.15);
+}
+
+
+/* ================================
+   GRID DE SERVICIOS
+================================ */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:1.4rem;
+}
+
+
+/* ================================
+   TARJETA DE SERVICIO
+================================ */
+
+.service-card{
+    background:linear-gradient(160deg, rgba(15,46,68,0.95), rgba(9,26,39,0.95));
+    padding:1.7rem;
+    border-radius:var(--radius-md);
+    border:1px solid rgba(255,255,255,0.08);
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    gap:0.85rem;
+    min-height:220px;
+}
+
+.service-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(54,214,255,0.35);
+    box-shadow:0 10px 25px rgba(2,12,20,0.4);
+}
+
+.service-card-header{
+    display:flex;
+    gap:0.9rem;
+    align-items:flex-start;
+}
+
+.service-icon{
+    width:44px;
+    height:44px;
+    border-radius:12px;
+    background:rgba(54,214,255,0.12);
+    border:1px solid rgba(54,214,255,0.35);
+    display:grid;
+    place-items:center;
+    color:var(--primary);
+    box-shadow:0 10px 20px rgba(3,12,20,0.35);
+    flex:0 0 auto;
+}
+
+.service-icon i{
+    font-size:1.2rem;
+}
+
+.service-title{
+    display:flex;
+    flex-direction:column;
+    gap:0.35rem;
+}
+
+.service-tag{
+    font-size:0.78rem;
+    font-weight:600;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--muted);
+}
+
+.service-card h3{
+    font-family:"Space Grotesk",sans-serif;
+    font-size:1.15rem;
+    margin:0;
+}
+
+.service-card p{
+    font-size:.95rem;
+    color:var(--muted);
+    line-height:1.5;
+    margin:0;
+}
+
+
+/* ================================
+   ICONOS OPCIONALES
+================================ */
+
+.service-card i{
+    color:inherit;
+}
+
+
+/* ================================
+   BOTON VOLVER / CTA
+================================ */
+
+.services-cta{
+    text-align:center;
+    padding:3rem 8vw 5rem;
+}
+
+.services-cta .btn{
+    margin-top:1rem;
 }

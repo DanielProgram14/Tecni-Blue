@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .project-detail-header {
-            padding: 20;
+            padding: 6rem 8vw 4rem;
             text-align: center;
         }
         .project-detail-header h1  {
@@ -113,6 +113,41 @@
         .project-links {
             text-align: center;
         }
+
+        @media (max-width: 980px) {
+            .project-detail-header {
+                padding: 4.5rem 6vw 3rem;
+            }
+            .project-content {
+                padding: 0 6vw 5rem;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .project-detail-header {
+                padding: 3.5rem 5vw 2.5rem;
+                text-align: left;
+            }
+            .project-detail-header .tech-tags {
+                justify-content: flex-start;
+            }
+            .project-content {
+                padding: 0 5vw 4rem;
+            }
+            .project-readme {
+                padding: 1.6rem;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .project-links .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -128,8 +163,21 @@
             <a href="index.html#portafolio">Portafolio</a>
             <a href="index.html#contacto">Contacto</a>
         </nav>
-        <a href="index.html#contacto" class="btn btn-outline btn-small">Contacto</a>
+        <div class="header-cta">
+            <a href="index.html#contacto" class="btn btn-outline btn-small">Contacto</a>
+        </div>
+        <button class="nav-toggle" aria-label="Abrir menÃº" aria-controls="nav-mobile" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
+
+    <div id="nav-mobile" class="nav-mobile" aria-hidden="true">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#web">Desarrollo Web</a>
+        <a href="index.html#portafolio">Portafolio</a>
+        <a href="index.html#contacto">Contacto</a>
+    </div>
 
     <main>
         <section class="project-detail-header">
